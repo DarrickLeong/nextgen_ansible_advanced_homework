@@ -2,7 +2,7 @@
 # tasks file for osp.servers
 - name: Create instances
   os_server:
-    cloud: openstack
+    cloud: opencloud
     name: "{{ item.0.name }}"
     image: "{{ item.0.image }}"
     key_name: "{{ item.0.key_name }}"
