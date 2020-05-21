@@ -1,5 +1,14 @@
-- name: Provision OSP Servers
+- name: Testing
   hosts: localhost
+  become: no
+  gather_facts: false
+  
+  tasks:
+  - name: Testing
+    debug:
+      msg: "Testing 123"
+  
+- hosts: localhost
   connection: local
   become: no
   gather_facts: true
