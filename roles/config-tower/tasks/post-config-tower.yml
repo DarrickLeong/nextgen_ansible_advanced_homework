@@ -24,6 +24,7 @@
     tower_password: r3dh4t1!
     ssh_key_data: "/root/.ssh/openstack.pem"
     username: cloud-user
+    become_method: sudo
 
 - name: Create Inventory
   command: |
