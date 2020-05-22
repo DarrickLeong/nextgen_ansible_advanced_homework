@@ -58,6 +58,6 @@
     timeout: 600
   delegate_to: "{{ inventory_hostname }}"
   with_items: 
-    - "{{ result.openstack_servers }}"
+    - "{{ result.ansible_facts.openstack_servers }}"
   tags:
    - test.servers
