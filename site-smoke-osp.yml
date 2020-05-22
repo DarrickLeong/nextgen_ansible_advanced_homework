@@ -14,7 +14,7 @@
     until: '"Hello World" in result.content'
     retries: 10
     delay: 1
-    with_items: "{{result.ansible_facts.openstack_servers}}"
+    with_items: "{{result.openstack_servers}}"
 
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
